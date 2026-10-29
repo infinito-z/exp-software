@@ -1,0 +1,388 @@
+{
+ "satisfaccion": {
+  "titulo": "Cuestionario de satisfacción",
+  "instruccion": "Indica qué tan de acuerdo estás con cada afirmación pensando solo en la aplicación que acabas de usar.",
+  "etiquetas": [
+   "Totalmente en desacuerdo",
+   "Bastante en desacuerdo",
+   "Neutral",
+   "Bastante de acuerdo",
+   "Totalmente de acuerdo"
+  ],
+  "items": [
+   {
+    "id": "PEOU1",
+    "dim": "PEOU",
+    "text": "Encontré el procedimiento para utilizar la aplicación web veterinaria sencillo y fácil de seguir."
+   },
+   {
+    "id": "PEOU2",
+    "dim": "PEOU",
+    "text": "En general, considero que la aplicación web veterinaria es fácil de usar."
+   },
+   {
+    "id": "PEOU3",
+    "dim": "PEOU",
+    "text": "Podría explicar fácilmente el uso de la aplicación web veterinaria a otra persona."
+   },
+   {
+    "id": "PEOU4",
+    "dim": "PEOU",
+    "text": "En mi opinión, es sencillo registrar pacientes, síntomas y variables clínicas en la aplicación."
+   },
+   {
+    "id": "PEOU5",
+    "dim": "PEOU",
+    "text": "La aplicación web veterinaria me pareció clara y sencilla de entender."
+   },
+   {
+    "id": "PEOU6",
+    "dim": "PEOU",
+    "text": "Estoy seguro de que tengo las habilidades necesarias para usar la aplicación en la práctica."
+   },
+   {
+    "id": "PU1",
+    "dim": "PU",
+    "text": "Creo que la aplicación reduce el esfuerzo necesario para registrar y evaluar casos clínicos veterinarios."
+   },
+   {
+    "id": "PU2",
+    "dim": "PU",
+    "text": "Los resultados generados por la aplicación son fáciles de entender e interpretar."
+   },
+   {
+    "id": "PU3",
+    "dim": "PU",
+    "text": "La aplicación facilita la revisión de síntomas, variables clínicas y resultados del paciente."
+   },
+   {
+    "id": "PU4",
+    "dim": "PU",
+    "text": "En general, encontré útil la aplicación web veterinaria."
+   },
+   {
+    "id": "PU5",
+    "dim": "PU",
+    "text": "Considero que la aplicación es práctica para apoyar la evaluación inicial de enfermedades en perros y gatos."
+   },
+   {
+    "id": "PU6",
+    "dim": "PU",
+    "text": "Creo que la aplicación proporciona una solución efectiva para organizar la información clínica del paciente."
+   },
+   {
+    "id": "PU7",
+    "dim": "PU",
+    "text": "Usando la aplicación se pueden evaluar casos clínicos de forma más eficiente."
+   },
+   {
+    "id": "PU8",
+    "dim": "PU",
+    "text": "En general, creo que la aplicación representa una mejora frente al registro o análisis manual de la información clínica."
+   },
+   {
+    "id": "ITU1",
+    "dim": "ITU",
+    "text": "Definitivamente usaría la aplicación web veterinaria para apoyar la evaluación clínica de pacientes."
+   },
+   {
+    "id": "ITU2",
+    "dim": "ITU",
+    "text": "Intentaría usar preferiblemente esta aplicación frente a otros métodos si necesito registrar o evaluar casos clínicos veterinarios en el futuro."
+   }
+  ],
+  "atencion": {
+   "id": "ATN_SAT",
+   "text": "Para verificar tu atención, marca aquí la opción «Bastante de acuerdo».",
+   "esperado": 4
+  }
+ },
+ "ueq": {
+  "titulo": "Cuestionario de experiencia de usuario",
+  "instruccion": "Para cada fila, marca el número que esté más cerca del adjetivo que mejor describe la aplicación que acabas de usar. No hay respuestas correctas o incorrectas.",
+  "importancia": {
+   "texto": "La propiedad del producto que describen estos conceptos me resulta…",
+   "izq": "Irrelevante",
+   "der": "Muy importante"
+  },
+  "escalas": [
+   {
+    "name": "Atractivo",
+    "intro": "En general, el producto me parece…",
+    "pairs": [
+     {
+      "id": "Atractivo_1",
+      "left": "desalentador",
+      "right": "gratificante"
+     },
+     {
+      "id": "Atractivo_2",
+      "left": "malo",
+      "right": "bueno"
+     },
+     {
+      "id": "Atractivo_3",
+      "left": "desagradable",
+      "right": "agradable"
+     },
+     {
+      "id": "Atractivo_4",
+      "left": "antipático",
+      "right": "simpático"
+     }
+    ],
+    "importanceId": "Atractivo_imp"
+   },
+   {
+    "name": "Eficiencia",
+    "intro": "Para lograr mis objetivos, el producto me parece…",
+    "pairs": [
+     {
+      "id": "Eficiencia_1",
+      "left": "lento",
+      "right": "rápido"
+     },
+     {
+      "id": "Eficiencia_2",
+      "left": "ineficiente",
+      "right": "eficiente"
+     },
+     {
+      "id": "Eficiencia_3",
+      "left": "nada práctico",
+      "right": "práctico"
+     },
+     {
+      "id": "Eficiencia_4",
+      "left": "recargado",
+      "right": "sencillo"
+     }
+    ],
+    "importanceId": "Eficiencia_imp"
+   },
+   {
+    "name": "Facilidad de comprensión",
+    "intro": "El manejo del producto me parece…",
+    "pairs": [
+     {
+      "id": "Facilidad de comprensión_1",
+      "left": "incomprensible",
+      "right": "comprensible"
+     },
+     {
+      "id": "Facilidad de comprensión_2",
+      "left": "difícil de aprender",
+      "right": "fácil de aprender"
+     },
+     {
+      "id": "Facilidad de comprensión_3",
+      "left": "complicado",
+      "right": "sencillo"
+     },
+     {
+      "id": "Facilidad de comprensión_4",
+      "left": "confuso",
+      "right": "claro"
+     }
+    ],
+    "importanceId": "Facilidad de comprensión_imp"
+   },
+   {
+    "name": "Estimulación",
+    "intro": "El empleo del producto me parece…",
+    "pairs": [
+     {
+      "id": "Estimulación_1",
+      "left": "nada interesante",
+      "right": "interesante"
+     },
+     {
+      "id": "Estimulación_2",
+      "left": "aburrido",
+      "right": "entretenido"
+     },
+     {
+      "id": "Estimulación_3",
+      "left": "poco valioso",
+      "right": "valioso"
+     },
+     {
+      "id": "Estimulación_4",
+      "left": "soporífero",
+      "right": "estimulante"
+     }
+    ],
+    "importanceId": "Estimulación_imp"
+   },
+   {
+    "name": "Adaptabilidad",
+    "intro": "En lo que respecta a mis necesidades y preferencias personales, el producto es…",
+    "pairs": [
+     {
+      "id": "Adaptabilidad_1",
+      "left": "nada adaptable",
+      "right": "adaptable"
+     },
+     {
+      "id": "Adaptabilidad_2",
+      "left": "nada modificable",
+      "right": "modificable"
+     },
+     {
+      "id": "Adaptabilidad_3",
+      "left": "rígido",
+      "right": "flexible"
+     },
+     {
+      "id": "Adaptabilidad_4",
+      "left": "nada extensible",
+      "right": "extensible"
+     }
+    ],
+    "importanceId": "Adaptabilidad_imp"
+   },
+   {
+    "name": "Utilidad",
+    "intro": "En cuanto a la posibilidad de utilizarlo, el producto me parece…",
+    "pairs": [
+     {
+      "id": "Utilidad_1",
+      "left": "inútil",
+      "right": "útil"
+     },
+     {
+      "id": "Utilidad_2",
+      "left": "nada provechoso",
+      "right": "provechoso"
+     },
+     {
+      "id": "Utilidad_3",
+      "left": "nada beneficioso",
+      "right": "beneficioso"
+     },
+     {
+      "id": "Utilidad_4",
+      "left": "nada rentable",
+      "right": "rentable"
+     }
+    ],
+    "importanceId": "Utilidad_imp"
+   },
+   {
+    "name": "Valor",
+    "intro": "En general, el diseño del producto me parece…",
+    "pairs": [
+     {
+      "id": "Valor_1",
+      "left": "poco valioso",
+      "right": "valioso"
+     },
+     {
+      "id": "Valor_2",
+      "left": "impresentable",
+      "right": "presentable"
+     },
+     {
+      "id": "Valor_3",
+      "left": "ordinario",
+      "right": "refinado"
+     },
+     {
+      "id": "Valor_4",
+      "left": "vulgar",
+      "right": "elegante"
+     }
+    ],
+    "importanceId": "Valor_imp"
+   },
+   {
+    "name": "Estética visual",
+    "intro": "El diseño visual del producto me parece…",
+    "pairs": [
+     {
+      "id": "Estética visual_1",
+      "left": "feo",
+      "right": "bonito"
+     },
+     {
+      "id": "Estética visual_2",
+      "left": "carente de estilo",
+      "right": "con mucho estilo"
+     },
+     {
+      "id": "Estética visual_3",
+      "left": "nada atractivo",
+      "right": "atractivo"
+     },
+     {
+      "id": "Estética visual_4",
+      "left": "antiestético",
+      "right": "estético"
+     }
+    ],
+    "importanceId": "Estética visual_imp"
+   },
+   {
+    "name": "Manejo intuitivo",
+    "intro": "El manejo del producto me parece…",
+    "pairs": [
+     {
+      "id": "Manejo intuitivo_1",
+      "left": "arduo",
+      "right": "fácil"
+     },
+     {
+      "id": "Manejo intuitivo_2",
+      "left": "ilógico",
+      "right": "lógico"
+     },
+     {
+      "id": "Manejo intuitivo_3",
+      "left": "equívoco",
+      "right": "evidente"
+     },
+     {
+      "id": "Manejo intuitivo_4",
+      "left": "incoherente",
+      "right": "coherente"
+     }
+    ],
+    "importanceId": "Manejo intuitivo_imp"
+   },
+   {
+    "name": "Fiabilidad",
+    "intro": "La información y los datos que me proporciona el producto son…",
+    "pairs": [
+     {
+      "id": "Fiabilidad_1",
+      "left": "inútiles",
+      "right": "útiles"
+     },
+     {
+      "id": "Fiabilidad_2",
+      "left": "inverosímiles",
+      "right": "creíbles"
+     },
+     {
+      "id": "Fiabilidad_3",
+      "left": "poco serios",
+      "right": "serios"
+     },
+     {
+      "id": "Fiabilidad_4",
+      "left": "inexactos",
+      "right": "exactos"
+     }
+    ],
+    "importanceId": "Fiabilidad_imp"
+   }
+  ],
+  "atencion": {
+   "id": "ATN_UEQ",
+   "izq": "(control de atención)",
+   "der": "(control de atención)",
+   "instruccion": "Para esta fila, marca el número 3.",
+   "esperado": 3
+  }
+ }
+}

@@ -1,0 +1,42 @@
+[
+ {
+  "n": 1,
+  "texto": "Iniciar sesión en la aplicación web veterinaria."
+ },
+ {
+  "n": 2,
+  "texto": "Registrar un nuevo propietario con sus datos personales, departamento y distrito."
+ },
+ {
+  "n": 3,
+  "texto": "Registrar un nuevo paciente indicando especie, raza, edad, sexo y peso."
+ },
+ {
+  "n": 4,
+  "texto": "Ingresar los síntomas observados del paciente."
+ },
+ {
+  "n": 5,
+  "texto": "Completar las variables clínicas asociadas al caso, como glucosa, densidad urinaria, resultados de pruebas o signos relevantes."
+ },
+ {
+  "n": 6,
+  "texto": "Consultar variables clínicas complementarias"
+ },
+ {
+  "n": 7,
+  "texto": "Ejecutar la evaluación diagnóstica del sistema."
+ },
+ {
+  "n": 8,
+  "texto": "Revisar el diagnóstico sugerido, nivel de riesgo y probabilidad generada."
+ },
+ {
+  "n": 9,
+  "texto": "Consultar las reglas activadas o evidencia utilizada por el sistema para justificar el resultado."
+ },
+ {
+  "n": 10,
+  "texto": "Consultar el historial clínico del paciente o descargar el reporte de evaluación, si está disponible."
+ }
+]

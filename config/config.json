@@ -1,0 +1,39 @@
+{
+  "titulo": "Evaluación de aplicaciones web veterinarias",
+  "urlCG": "REEMPLAZAR_URL_APLICACION_CG",
+  "urlSG": "REEMPLAZAR_URL_PROTOTIPO_FIGMA_SG",
+  "modoApp": "iframe",
+  "limiteSugeridoMin": 15,
+  "minSegundosPorItem": 1.5,
+  "perfiles": {
+    "1": { "primera": "SG", "problemaSG": 1, "problemaCG": 2 },
+    "2": { "primera": "SG", "problemaSG": 2, "problemaCG": 1 },
+    "3": { "primera": "CG", "problemaSG": 2, "problemaCG": 1 },
+    "4": { "primera": "CG", "problemaSG": 1, "problemaCG": 2 }
+  },
+  "consentimiento": {
+    "version": "1.0",
+    "texto": [
+      "Esta es una investigación académica sobre el uso de aplicaciones web veterinarias para evaluar casos clínicos de perros y gatos.",
+      "Usarás dos aplicaciones, resolverás un caso clínico en cada una y responderás cuestionarios después de cada caso. La sesión dura aproximadamente 25 a 30 minutos.",
+      "Tu participación es voluntaria y puedes abandonar cuando quieras. Tus respuestas se identifican solo con un código (por ejemplo, S01), sin tu nombre ni tu correo, y se usarán únicamente con fines de investigación académica.",
+      "Además de tus respuestas, el sistema registra los tiempos de cada paso, qué tareas marcas como terminadas y el tipo de dispositivo y navegador que usas.",
+      "Lo que se evalúa son las aplicaciones, no tu desempeño. No hay respuestas buenas ni malas, y tus críticas honestas son lo más útil."
+    ],
+    "casilla": "He leído la información, acepto participar voluntariamente y autorizo el uso de mis respuestas con fines de investigación académica."
+  },
+  "instrucciones": {
+    "intro": [
+      "En esta sesión usarás dos aplicaciones web para evaluar casos clínicos de pacientes caninos y felinos. Las llamaremos Aplicación 1 y Aplicación 2.",
+      "No necesitas conocimientos de veterinaria: para cada caso recibirás una ficha con todos los datos que debes ingresar.",
+      "Con cada aplicación resolverás un caso distinto. Verás la lista de tareas junto a la aplicación. Marca cada tarea cuando la termines.",
+      "Cuando termines un caso, responderás los cuestionarios sobre la aplicación que acabas de usar. Piensa solo en esa aplicación.",
+      "Haz la sesión completa de una sola vez, en un lugar tranquilo y con buena conexión. Te tomará entre 25 y 30 minutos. Lee con calma cada instrucción y cada afirmación: la calidad de tus respuestas es lo más importante."
+    ],
+    "comprension": [
+      { "pregunta": "¿Qué se evalúa en este estudio?", "opciones": ["Tu desempeño personal", "Las aplicaciones web", "Tu conocimiento de veterinaria"], "correcta": 1 },
+      { "pregunta": "¿Cuántas aplicaciones usarás?", "opciones": ["Una", "Dos", "Cuatro"], "correcta": 1 },
+      { "pregunta": "¿Qué debes hacer al terminar cada tarea?", "opciones": ["Marcarla como terminada", "Avisar por correo", "Nada"], "correcta": 0 }
+    ]
+  }
+}

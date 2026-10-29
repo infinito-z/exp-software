@@ -1,0 +1,98 @@
+{
+ "1": {
+  "titulo": "Caso 1: paciente canino",
+  "propietario": {
+   "nombre": "María Quispe",
+   "contacto": "900 000 001 · propietario1@ejemplo.com",
+   "departamento": null,
+   "distrito": null
+  },
+  "paciente": {
+   "nombre": "Rocky",
+   "especie": "Perro",
+   "raza": "Mestizo",
+   "edad": "9 años",
+   "sexo": "Macho",
+   "peso": "14 kg"
+  },
+  "sintomas": [
+   {
+    "nombre": "Poliuria",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   },
+   {
+    "nombre": "Polidipsia",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   },
+   {
+    "nombre": "Polifagia",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   },
+   {
+    "nombre": "Pérdida de peso",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   }
+  ],
+  "variables": [
+   {
+    "nombre": "Glucosa sanguínea",
+    "valor": "320",
+    "unidad": "mg/dL"
+   }
+  ],
+  "pacienteHistorial": null
+ },
+ "2": {
+  "titulo": "Caso 2: paciente felino",
+  "propietario": {
+   "nombre": "Jorge Ramos",
+   "contacto": "900 000 002 · propietario2@ejemplo.com",
+   "departamento": null,
+   "distrito": null
+  },
+  "paciente": {
+   "nombre": "Luna",
+   "especie": "Gato",
+   "raza": "Doméstico de pelo corto",
+   "edad": "11 años",
+   "sexo": "Hembra",
+   "peso": "4 kg"
+  },
+  "sintomas": [
+   {
+    "nombre": "Pérdida de peso",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   },
+   {
+    "nombre": "Polifagia",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   },
+   {
+    "nombre": "Taquicardia",
+    "severidad": null,
+    "frecuencia": null,
+    "duracion": null
+   }
+  ],
+  "variables": [
+   {
+    "nombre": "T4 total",
+    "valor": "5.5",
+    "unidad": "µg/dL"
+   }
+  ],
+  "pacienteHistorial": null
+ }
+}

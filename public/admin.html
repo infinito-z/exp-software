@@ -1,0 +1,16 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel del investigador</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="top"><div class="brand">Panel del investigador</div><div class="who" id="alm"></div></header>
+<main style="max-width:1000px"><div class="card" id="login"><label class="field"><span>Clave de administrador</span><input id="key" type="password" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px"></label><div class="row"><button class="btn" id="go">Entrar</button></div><div class="err" id="err"></div></div>
+<div id="panel" hidden><div class="card"><h2>Resumen</h2><div id="sum"></div><h3>Descargas (solo sesiones completas)</h3><div id="dl"></div><p class="small muted">Los CSV tienen el mismo formato que los de Google Forms: se pueden usar con el script de análisis.</p></div>
+<div class="card"><h2>Sesiones</h2><div style="overflow:auto"><table class="case" style="min-width:700px"><thead><tr><th>Código</th><th>Perfil</th><th>Estado</th><th>Paso</th><th>Min. app 1</th><th>Min. app 2</th><th>Creada</th><th></th></tr></thead><tbody id="rows"></tbody></table></div></div></div></main>
+<script>
+const $=s=>document.querySelector(s);let key=sessionStorage.getItem('adm')||'';
+async function load(){const r=await fetch('/api/admin/sessions',{headers:{'x-admin-key':key}});if(!r.ok){$('#login').hidden=false;$('#panel').hidden=true;$('#err').textContent=key?'Clave incorrecta':'';return}
+ sessionStorage.setItem('adm',key);const j=await r.json();$('#login').hidden=true;$('#panel').hidden=false;$('#alm').textContent='Almacenamiento: '+j.almacenamiento;
+ const c=j.completadasPorPerfil;$('#sum').innerHTML='Completadas por perfil: '+[1,2,3,4].map(p=>`<span class="chip">P${p}: ${c[p]}</span>`).join(' ')+` · Total: <b>${Object.values(c).reduce((a,b)=>a+b,0)}</b>`;
+ const files=['satisfaccion_CG.csv','satisfaccion_SG.csv','demografico.csv','registro_sesiones.csv','tareas.csv','eventos.csv','sesiones_completas.json'];
+ $('#dl').innerHTML=files.map(f=>`<a class="btn ghost" style="margin:4px;display:inline-block;text-decoration:none" href="/api/admin/export/${f}?key=${encodeURIComponent(key)}">${f}</a>`).join('');
+ $('#rows').innerHTML=j.sesiones.map(s=>`<tr><td>${s.code}</td><td>${s.perfil}</td><td>${s.estado}${s.motivo?' ('+s.motivo+')':''}</td><td>${s.paso}</td><td>${s.minutos[0]??'—'}</td><td>${s.minutos[1]??'—'}</td><td>${new Date(s.creada).toLocaleString('es-PE')}</td><td>${s.estado==='invalid'?'':`<button class="btn ghost" data-c="${s.code}">Anular</button>`}</td></tr>`).join('');
+ document.querySelectorAll('[data-c]').forEach(b=>b.onclick=async()=>{const m=prompt('Motivo de la anulación (p. ej. falla técnica, abandono):');if(m===null)return;await fetch('/api/admin/invalidate',{method:'POST',headers:{'Content-Type':'application/json','x-admin-key':key},body:JSON.stringify({code:b.dataset.c,reason:m})});load()})}
+$('#go').onclick=()=>{key=$('#key').value;load()};load();
+</script></body></html>
